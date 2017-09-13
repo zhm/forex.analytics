@@ -49,8 +49,8 @@ virtual std::vector<double> GetIndicatorData(const std::vector<Candlestick>* can
             this->MAX_VALUE = v[i];
     }
 
-	this->MAX_VALUE = this->MAX_VALUE * 1000;
-	this->MIN_VALUE = this->MIN_VALUE * 1000;
+	this->MAX_VALUE = this->MAX_VALUE;
+	this->MIN_VALUE = this->MIN_VALUE;
 
 	this->uniform_dist = std::uniform_real_distribution<double>(this->MIN_VALUE, this->MAX_VALUE);
 

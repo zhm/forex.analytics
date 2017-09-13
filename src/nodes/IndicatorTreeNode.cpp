@@ -26,9 +26,9 @@ bool IndicatorTreeNode::Evaluate(
 
 		switch (sign) {
 		case Sign::Gt:
-			return (value / 1000) > data.at(this->indicator).data;
+			return (value) > data.at(this->indicator).data;
 		case Sign::Lt:
-			return value / 1000 < data.at(this->indicator).data;
+			return (value) < data.at(this->indicator).data;
 		}
 
 		return false;
